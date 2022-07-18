@@ -598,9 +598,8 @@ loan_test.head(25)
 <div align="center"><img src="images/test_data_predictions.png" alt="Feature Impotances"></div>
 
 ## Conclusion
-- Finally we finishes the loan status prediction project.
+- Finally we finishes the loan approval prediction project.
 - We have built a Decision Tree Classifier which performs well with selected features such as credit_history, loan_amount, applicant_income, co-applicant_income, dependents and having the Training accuracy of 85.36% and Testing accuracy of 85.54%.
 
-#### If you love my work, kindly give a Star to my repository.
 #### Facing any issues, feel free to post your issues on my GitHub.
-#### Thank you Everyone for seeing my work.
+
