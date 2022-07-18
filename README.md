@@ -1,8 +1,7 @@
-# Loan-Approval-Prediction-using-ML
-<h1 align="center">Loan Status Prediction</h1>
+
+<h1 align="center">Loan-Approval-Prediction-using-ML</h1>
 
 # Table of Contents
-- [Demo](#demo)
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Project Explanation](#project-explanation)
@@ -16,10 +15,6 @@
   - [Test data Predictions](#test-data-predictions)
 - [Conclusion](#conclusion)
 
-## Demo
-**App Link** - [Loan Status Predictor](https://ashok-machine-learning-project.herokuapp.com/#loan)
-
-![Loan Status Gif](../Demos/loan.gif)
 
 ## Introduction
 - In this Loan Status Prediction dataset, we have the data of applicants those who previously applied for the loan based on the property which is Property Loan. 
@@ -28,7 +23,7 @@
 - In this project, we are going to classify an individual whether he/she can get the loan amount based on his/her Income, Education, Working Experience, Loan which is taken previously, and many more factors. 
 - Let’s get more into it by looking at the data.
 
-<div align="center"><img src="images/loan-approved.jpg" height="200" width="200"></div>
+<div align="center"><img src="https://miro.medium.com/max/640/1*UC0sy0bENl-DLPy3jmXNag.jpeg" height="200" width="200"></div>
 
 ## Motivation
 - This project was started as a motivation for learning Machine Learning Algorithms and to learn the different data preprocessing techniques such as Exploratory Data Analysis, Feature Engineering, Feature Selection, Feature Scaling and finally to build a machine learning model.
@@ -38,15 +33,15 @@
 ### Data Collection
 - The dataset is collected from [Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset).
 - The dataset which we get from kaggle consists of two CSV(Comma Separated Values) files.
-  - One is Train Data (`train_u6lujuX_CVtuZ9i.csv`)
-  - Another is Test Data (`test_Y3wMUE5_7gLdaTN.csv`)
+  - One is Train Data (`train_ctrUa4K.csv`)
+  - Another is Test Data (`test_lAUu6dG.csv`)
 
 **Loading the collected data**
 
 - The CSV data is loaded with the help of [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) method in pandas library.
 ```python
 # TODO : To Load previous applicants loan application data
-loan_train = pd.read_csv('../data/train_u6lujuX_CVtuZ9i.csv')
+loan_train = pd.read_csv('/content/drive/MyDrive/Datasets/train_ctrUa4K.csv')
 ```
 - The Training data consists of 614 applicant samples and 12 features.
 - The 12 features are Loan_ID, Gender, Married, Dependents, Education, Self_Employed, ApplicanIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History and Property Area.
@@ -577,7 +572,7 @@ Score :  85.34 %
 
 ```python
 # Loading Test Data
-loan_test = pd.read_csv('../data/test_Y3wMUE5_7gLdaTN.csv')
+loan_test = pd.read_csv('/content/drive/MyDrive/Datasets/test_lAUu6dG.csv')
 
 # Selecting Prediction Features
 loan_test = loan_test.loc[:, prediction_features]
