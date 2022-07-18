@@ -1,1 +1,1 @@
-# Loan-Aprroval-Preidction-using-ML
+# Loan-Approval-Prediction-using-ML
